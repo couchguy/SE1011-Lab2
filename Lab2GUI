@@ -1,0 +1,27 @@
+/*
+*Course: SE-1011-001
+*Term: Winter 2010-2011
+*Assignment: Lab 2
+*Author: Dan Kass
+*Date: 12/14/2010
+*/
+package kassd
+
+import javax.swing.JOptionPane;
+
+public class USPostalService {
+	Public static void main (String [] args){
+	
+	// The type of letter being sent
+	String letter;
+	// Weight in ounces of package
+	double weight;
+	
+	// Input the type of letter
+	letter = JOptionPane.showInputDialog("What are you mailing today? A Letter, a LargeEnvelope, or a Package?");
+	// Input the weight in ounces
+	weight = double.parseDouble(JOptionPane.showInputDialog("What is the weight in ounces?"));
+	
+	JOptionPane.showMessageDialog(null,"You would like to mail a " + letter + " and it weighs " + weight + "ounces.");
+	}
+}
